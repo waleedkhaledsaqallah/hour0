@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Kanit:wght@500&family=Moon+Dance&family=Oswald:wght@500&family=Roboto+Condensed:wght@700&display=swap');
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    text-transform: capitalize;
+}
+span{
+color: orange;
+}
+
+
+
+header .continar{
+    width: 70%;
+    margin: auto;
+}
+header .continar .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    font-weight: 900;
+    height: 15vh;
+}
+header .continar .mnuo{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+}
+.mnuo a{
+transition: 0.8s;
+}
+.mnuo a:hover{
+color: orange;
+}
+.logo a{
+transition: 0.8s;
+}
+.logo a:hover{
+color: orange;
+}
+header .continar .list .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+header .continar .list .icon{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+}
+/*   start secion img*/
+.logo .fa-bars{
+display: none;
+}
+.text h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+main .box{
+width: 70%;
+margin: auto;
+position: relative;
+margin-top: 1.5rem;
+}
+.bacgroungimg img{
+width: 300px;
+background-color: rgba(255, 166, 0, 0.611);
+position: absolute;
+right: 0;
+transition: 2s;
+}
+img:hover{
+transform: scale(1.2);
+}
+main .box .continar{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,200px);
+}
+main .box .continar .text{
+display: grid;
+grid-column: 1/2;
+gap: 1.8rem;
+position: absolute;
+left: 8rem;
+top: 4rem;
+}
+.link{
+display: flex;
+align-items: center;
+}
+.link .link1{
+background-color: rgba(85, 78, 78, 0.626);
+padding: 2%;
+}
+.link .link2{
+background-color: rgba(7, 24, 36, 0.758);
+padding: 3%;
+color: white;
+}
+main .box .continar .bacgroungimg{
+display: grid;
+grid-column:2/3;
+}
+main h2{
+text-transform: uppercase;
+width: fit-content;
+margin-top: 2.5rem;
+border-top: solid orange 1px;
+padding: 0.5rem 0;
+margin: auto;
+}
+
+/* rospnsiv */
+@media (max-width:992px){
+    header .continar .mnuo{
+       display: none;
+    }
+    .logo .fa-bars{
+        display:block;
+        }
+        main .box .continar{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(2,1fr);
+            }
+            main .box .continar .text{
+                display: grid;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                }
+               .continar .bacgroungimg{
+                   position: relative;
+                }
+                .continar .bacgroungimg img{
+                    position: absolute;
+                    width: 180px;
+                    height: 350px;
+                   right: -7rem;
+                   top: 2.5rem;
+                 }
+               
+}
